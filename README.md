@@ -80,7 +80,7 @@ class Watcher {
 	update() {
 		// 视图更新
 		console.log("view update");
-		render();
+		render(); // 即调用 component 的 update 函数，生成组件的 vdom 以及触发 diff -> 渲染
 	}
 }
 
@@ -3216,5 +3216,3 @@ Vue 2.x 最多只能进行监听无限深度的对象属性，但是无法监听
 * https://ustbhuangyi.github.io/vue-analysis/
 * https://www.zhihu.com/question/46397274/answer/101193678
 * .... 
-
-### 
